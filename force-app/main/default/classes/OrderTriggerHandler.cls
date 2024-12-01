@@ -34,8 +34,10 @@ public class OrderTriggerHandler {
                     order.Modo_de_Pagamento__c == 'Vale Refeição/Vale Alimentação' || 
                     order.Modo_de_Pagamento__c == 'Voucher') {
                     order.Status_Pagamento__c = 'Aprovado';
+                    order.Status = 'Aprovado';
                 } else {
                     order.Status_Pagamento__c = 'Pagamento Pendente';
+                    order.Status = 'Rascunho';
                 }
                 
             }
