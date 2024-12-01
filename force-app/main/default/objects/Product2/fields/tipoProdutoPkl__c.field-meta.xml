@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tipoProdutoPkl__c</fullName>
+    <label>Tipo do Produto</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cafés Especiais</fullName>
+                <default>false</default>
+                <label>Cafés Especiais</label>
+            </value>
+            <value>
+                <fullName>Chás e Sucos Naturais</fullName>
+                <default>false</default>
+                <label>Chás e Sucos Naturais</label>
+            </value>
+            <value>
+                <fullName>Sobremesas Artesanais</fullName>
+                <default>false</default>
+                <label>Sobremesas Artesanais</label>
+            </value>
+            <value>
+                <fullName>Biscoitos e Doces</fullName>
+                <default>false</default>
+                <label>Biscoitos e Doces</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

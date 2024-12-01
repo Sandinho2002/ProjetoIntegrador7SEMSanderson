@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>layoutCompactoProdutos</fullName>
+    <fields>Name</fields>
+    <fields>IsActive</fields>
+    <fields>ProductCode</fields>
+    <fields>precoMoeda__c</fields>
+    <fields>tipoProdutoPkl__c</fields>
+    <label>layoutCompactoProdutos</label>
+</CompactLayout>

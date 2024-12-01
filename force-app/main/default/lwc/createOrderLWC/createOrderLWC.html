@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Criar Pedido" icon-name="utility:cart">
+        <div class="slds-m-around_medium">
+            <!-- Adicione seu conteúdo aqui -->
+            <lightning-combobox 
+                name="paymentMode"
+                label="Modo de Pagamento"
+                value={paymentMode}
+                options={paymentModes}
+                onchange={handlePaymentModeChange}>
+            </lightning-combobox>
+
+            <lightning-datatable
+                key-field="Id"
+                data={products}
+                columns={columns}
+                hide-checkbox-column="false"
+                onrowselection={handleProductSelection}>
+            </lightning-datatable>
+
+            <div class="slds-m-top_medium slds-grid slds-grid_align-end">
+                <lightning-button label="Cancelar" onclick={handleCancel}></lightning-button>
+                <lightning-button variant="brand" label="Salvar Pedido" onclick={handleSave}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
